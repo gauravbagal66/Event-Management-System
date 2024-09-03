@@ -1,0 +1,52 @@
+/* Catering Section */
+.catering-section {
+    padding: 60px 0;
+    background-color: black;
+   
+}
+
+.catering-section h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.catering-section p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.catering-services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 30%;
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.service p {
+    font-size: 16px;
+    color: #fff;
+}

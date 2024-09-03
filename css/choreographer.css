@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.choreographer-cards {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateX(100%);
+    animation: scroll 9s linear infinite;
+}
+
+.card img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    font-size: 1em;
+    color: #666;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    33% { transform: translateX(0); }
+    66% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.container h1,p{
+    color: white;
+}

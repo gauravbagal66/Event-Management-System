@@ -1,0 +1,119 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.photographers-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.photographers-section .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    animation: slideIn 1s ease-in-out;
+}
+
+.photographers-section .description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.photographer-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photographer-cards .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.photographer-cards .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 130px;
+}
+
+.photographer-cards .card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.photographer-cards .card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

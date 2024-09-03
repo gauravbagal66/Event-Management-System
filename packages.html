@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Packages | MyEventPlanner</title>
+  <link rel="stylesheet" type="text/css" href="css/package.css">
+
+  <html lang="en" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body style="background-color: black;">
+<!-- <nav class="navbar bg-dark" data-bs-theme="dark"> -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="Images/logo.jpg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page"  href="index.html"><h4>Home</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="venue.html"><h4>Venues</h4></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <h4>Services</h4>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="catering.html"><h4>Catreen</h4></a></li>
+              <li><a class="dropdown-item" href="decors.html"><h4>Decors</h4></a></li>
+              <li><a class="dropdown-item" href="mehandi.html"><h4>Mehendi</h4></a></li>
+              <li><a class="dropdown-item" href="anchors.html"><h4>Anchors</h4></a></li>
+              <li><a class="dropdown-item" href="choreographar.html"><h4>Choreographer</h4></a></li>
+              <li><a class="dropdown-item" href="photographer.html"><h4>Photographers</h4></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="Gallery.html"><h4>Gallary</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  href="Reviews.html"><h4>Reviews</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  href="packages.html"><h4>Packages</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  href="Aboutus.html"><h4>About </h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  href="contact.html"><h4>Contact </h4></a>
+          </li>
+          <div class="vend">
+           <a  href="UserRegistration.html"> <h1 class="read">Are you  Vendor ?</h1></a>
+            <a href="UserRegistration.html"><button type="button" class="btn btn-outline-danger">Signup/Signin</button></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- </nav> end-->
+
+  <main>
+    <div class="packages">
+      <div class="package">
+        <h3>Basic Package</h3>
+        <p>Includes:</p>
+        <ul>
+          <li>Event planning consultation</li>
+          <li>Vendor coordination</li>
+          <li>Day-of coordination</li>
+        </ul>
+        <p class="price">₹1000</p>
+      </div>
+
+      <div class="package">
+        <h3>Standard Package</h3>
+        <p>Includes:</p>
+        <ul>
+          <li>Event planning consultation</li>
+          <li>Vendor coordination</li>
+          <li>Day-of coordination</li>
+          <li>Decor design and setup</li>
+          <li>Event timeline creation</li>
+        </ul>
+        <p class="price">₹2500</p>
+      </div>
+
+      <div class="package">
+        <h3>Premium Package</h3>
+        <p>Includes:</p>
+        <ul>
+          <li>Event planning consultation</li>
+          <li>Vendor coordination</li>
+          <li>Day-of coordination</li>
+          <li>Decor design and setup</li>
+          <li>Event timeline creation</li>
+          <li>Guest management and RSVP tracking</li>
+          <li>Full event design and styling</li>
+        </ul>
+        <p class="price">₹5000</p>
+      </div>
+    </div>
+  </main>
+ 
+  <footer class="bg-dark text-white pt-5 pb-4 footer " id="contact">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">ABOUT OUR EVENTS</h5>
+                <p>Your One Stop Solution For Making Any Event Memorable Or A Success. Making Dreams come true</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text uppercase mb- font-weight-bold text-warning">Event Planning</h5>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Event Management</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Meeting & Event Blog</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Why choose us?</a></p>
+     
+            </div>
+            <div class="col-md-3 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Information</h5>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Terms Of Use</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">FAQ</a></p>
+               <p> <a href="#" class="text-white" style="text-decoration: none;">Help</a></p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+                <p> <i class="fas fa-home mr-3"></i>Mangalevent@gmail.com</p>
+                <p> <i class="fas fa-envelope mr-3"></i>+91 1234567890</p>
+            </div>
+            <hr class="mb-4">
+            <div class="col-mb-7 col-lg-8">
+                <p>Copyright @2023 All rights reserved by:MangalEvents
+                    <a href="#" style="text-decoration: none;"><strong class="text-warning">MangalEvents</strong></a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>

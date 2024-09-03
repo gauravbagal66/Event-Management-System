@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .review-form {
+    background-color: #000;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px white;
+  }
+  .review-form h2{
+    color: #fff;
+  }
+  .review-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .review-form input,
+  .review-form textarea,
+  .review-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #000;
+    box-shadow: 0 0 4px white;
+  }
+  
+ #btn1
+ {
+  background-color: #57c89f;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 4px black;
+ }
+
+ #btn1:hover
+ {
+  box-shadow: 0 0 10px black;
+ }

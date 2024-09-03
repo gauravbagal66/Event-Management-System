@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Login.css">
+    
+
+    <title>User's Login</title>
+</head>
+<body>
+  
+    <img src="Images/E4.jpg" id="centre" style="width: 78%;height: 745px;margin-right: -916px;">
+    <div class="wrapper">
+         <div class="form-wrapper sign-in">
+             <form action="">
+                <h2> Login</h2>
+               
+                <div class="input-group">
+                    <input type="email"id="custEmail" required>
+                    <label for="">Email </label>
+                </div>
+                 <div class="input-group">
+                     <input type="password" id="custPass" required> <label for="">Password</label>
+                </div>
+
+               <div class="input-group">
+                <input type="number" id="custMob" required>
+                <label for="">Phone No </label>
+            </div>
+
+                <div class="remember">
+                    <label > <h5>By clicking'signup' I accept the Term of Use of EMS</h5></label>
+                </div>
+                
+                <button type="submit" onclick="addCustomer()" >Login</button>
+                <div class="signup-link">
+                    <p>You don’t have account  <a href="UserRegistration.html"
+                    class="signupbtn-ilink">sign Up</a></p>
+                </div>
+            </form>
+        
+        </div>
+        
+     </div>
+     
+</body>
+
+<script>
+
+    
+    var custNameElem = document.getElementById("custName");
+    var custEmailElem = document.getElementById("custEmail");
+    var custPassElem = document.getElementById("custPass");
+    var custConfirmPassElem =document.getElementById("custConfirmPass");
+    var custMobElem = document.getElementById("custMob");
+
+  
+
+    function addCustomer(params){
+        var customer={
+            custName :custNameElem.value,
+            custEmail :custEmailElem.value,
+            custPass :custPassElem.value,
+            custConfirmPass :custConfirmPassElem.value,
+            custMob :custMobElem.value
+        }
+
+        fetch("http://localhost:1972/customer/saveCustomer",{
+            method: "post",
+            headers:{
+                'content-type' : 'application/json'
+            },
+            body:JSON.stringify(customer)
+        }).then((response)=>{
+            console.log(response);
+            alert('Registered Successfully');
+            window.location.href = 'http://localhost:1972/UserLogin.html';
+        }).catch((response)=>{
+            console.log(response);
+            alert('something went wrong');
+           
+        })
+    }
+
+ function ValidatePassword()
+ {
+    if(custPassElem.value == custConfirmPassElem.value)
+    {
+        addCustomer();
+        
+        
+    }
+    else{
+        alert('Password does not match ');
+    }
+ }
+
+
+ 
+
+ 
+    
+ 
+  
+  
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
